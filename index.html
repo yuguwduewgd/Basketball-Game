@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Basketball Shooting Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Basketball Shooting Game</h1>
+  <div id="scoreboard">Score: <span id="score">0</span></div>
+  <canvas id="gameCanvas" width="800" height="500"></canvas>
+  <div class="controls">
+    <label>Angle: <input type="range" id="angle" min="20" max="80" value="45"> <span id="angleVal">45</span>°</label>
+    <label>Power: <input type="range" id="power" min="10" max="30" value="20"> <span id="powerVal">20</span></label>
+    <button id="shootBtn">Shoot (Space)</button>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
